@@ -16,6 +16,7 @@ def possibleClockTimes(A, B, C, D):
                         count += 1 # add to the count
                         resultArray.append(str(variableArray[i])+str(variableArray[j])+":"+str(variableArray[k])+str(variableArray[l])) # print the possible time
 
+    # second loop to check for repeated times
     for i in range(len(resultArray)):
         j = i+1
         while j < len(resultArray):
@@ -29,3 +30,5 @@ def possibleClockTimes(A, B, C, D):
     print("There are " + str(count) + " possible clock times")
 
 possibleClockTimes(1,0,2,1)
+possibleClockTimes(1,0,0,0)
+possibleClockTimes(4,7,8,1)
